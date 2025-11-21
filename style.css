@@ -1,0 +1,52 @@
+/* ===================== STYLE.CSS ===================== */
+
+:root{
+  --primary:#1e5fff;
+  --dark:#0a0f1a;
+  --light:#f5f7ff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:var(--light);color:#111;}
+
+/* HEADER */
+header{background:var(--primary);padding:2.5rem 1rem;text-align:center;color:white;}
+header h1{font-size:2.3rem;font-weight:700;}
+header p{margin-top:0.4rem;font-size:1rem;opacity:0.9;}
+
+/* NAVBAR */
+nav{display:flex;justify-content:center;gap:2rem;background:white;padding:1rem 0;position:sticky;top:0;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,0.08);}    
+nav a{text-decoration:none;color:var(--dark);font-weight:600;transition:0.2s;}
+nav a:hover{color:var(--primary);}   
+
+/* SECTIONS */
+section{padding:3rem 1rem;max-width:1100px;margin:auto;}
+h2{font-size:1.8rem;color:var(--primary);margin-bottom:1rem;font-weight:700;}
+
+/* ABOUT */
+.about-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;}
+.about-text{font-size:1rem;line-height:1.6;}
+.about-photo{width:100%;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,0.15);} 
+
+/* SKILLS */
+.skills-list{display:flex;gap:1rem;flex-wrap:wrap;}
+.skill{background:white;padding:0.75rem 1.3rem;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.1);font-weight:600;border-left:5px solid var(--primary);}   
+
+/* PROJECTS */
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;}
+.project-card{background:white;padding:1rem;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.12);transition:0.25s;}
+.project-card:hover{transform:translateY(-6px);}   
+.project-card h3{margin-bottom:0.5rem;}
+.project-card p{font-size:0.95rem;opacity:0.85;} 
+
+/* CONTACT */
+.contact-box{background:white;padding:1.5rem;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.12);max-width:500px;}
+.contact-box p{margin:0.3rem 0;} 
+
+/* FOOTER */
+footer{text-align:center;padding:2rem 1rem;margin-top:3rem;color:#555;} 
+
+/* RESPONSIVE */
+@media(max-width:780px){
+  .about-wrapper{grid-template-columns:1fr;} 
+}
